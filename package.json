@@ -1,0 +1,55 @@
+{
+  "name": "myapp3",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-decorators": "^7.16.7",
+    "@react-native-async-storage/async-storage": "^1.15.17",
+    "@react-native-community/datetimepicker": "^5.1.0",
+    "@react-navigation/native": "^6.0.6",
+    "@react-navigation/native-stack": "^6.2.5",
+    "axios": "^0.25.0",
+    "jcore-react-native": "^1.9.5",
+    "jmessage-react-plugin": "^3.2.0",
+    "mobx": "^6.3.13",
+    "mobx-react": "^7.2.1",
+    "moment": "^2.29.1",
+    "react": "17.0.2",
+    "react-native": "0.67.1",
+    "react-native-amap-geolocation": "^1.1.2",
+    "react-native-confirmation-code-field": "^7.3.0",
+    "react-native-datepicker": "^1.7.2",
+    "react-native-elements": "^3.4.2",
+    "react-native-image-crop-picker": "^0.37.2",
+    "react-native-image-header-scroll-view": "^1.0.0",
+    "react-native-linear-gradient": "^2.5.6",
+    "react-native-picker": "^4.3.7",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^3.10.2",
+    "react-native-svg": "^12.1.1",
+    "react-native-svg-uri": "^1.2.3",
+    "react-native-tab-navigator": "^0.3.4",
+    "react-native-vector-icons": "^9.0.0",
+    "teaset": "^0.7.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "7.14.0",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "^0.66.2",
+    "react-test-renderer": "17.0.2"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

@@ -14,7 +14,6 @@ class Index extends Component {
         this.setState({
           visitors: res.data.data.visitors,
         });
-        console.log(this.state);
       })
       .catch(err => {
         console.log(err);
@@ -44,6 +43,7 @@ class Index extends Component {
           {this.state.visitors.map((v, i) => {
             return (
               <Image
+                key={i}
                 // source={{uri: 'http://10.10.0.2'+'/upload/image.jpg'}} //服务器ip + 图片地址
                 source={{uri: v.avatar}}
                 style={{

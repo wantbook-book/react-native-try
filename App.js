@@ -6,6 +6,7 @@ import {Provider} from 'mobx-react';
 import RootStore from './src/mobx/index';
 import JMessage from './src/utils/JMessage';
 import AsyncStorage from './src/utils/asyncStorage';
+import UserStore from './src/mobx/userStore';
 class App extends Component {
   state = {
     hasInitedGeo: false,
@@ -15,7 +16,6 @@ class App extends Component {
 
     AsyncStorage.getData('userinfo')
       .then(data => {
-        console.log(data);
         if (data) {
           RootStore.setUserInfo(data.phone, data.token, data.userId);
         }
@@ -30,7 +30,7 @@ class App extends Component {
   }
   render() {
     return this.state.hasInitedGeo ? (
-      <Provider RootStore={RootStore}>
+      <Provider UserStore={UserStore} RootStore={RootStore}>
         <Nav />
       </Provider>
     ) : (

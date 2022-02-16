@@ -194,6 +194,8 @@ android {
 }
 
 dependencies {
+    implementation project(':aurora-imui-react-native')
+    
     implementation project(':jmessage-react-plugin') // 新增的
     implementation project(':jcore-react-native')  // 新增的
 

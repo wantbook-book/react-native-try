@@ -18,9 +18,9 @@ class MyButton extends Component {
           overflow: 'hidden',
         }}>
         <LinearGradient
-          start={{x: 0, y: 1}}
-          end={{x: 0, y: 0}}
-          colors={['#2f7aac', '#3f57cf', '#114092']}
+          start={this.props.start || {x: 0, y: 1}}
+          end={this.props.end || {x: 0, y: 0}}
+          colors={this.props.color || ['#2f7aac', '#3f57cf', '#114092']}
           style={styles.linearGradient}>
           <Text style={{...styles.buttonText, ...this.props.textStyle}}>
             {this.props.children}

@@ -1,9 +1,9 @@
 import axios from 'axios';
-import {BASH_URI} from './pathMap';
+import {BASE_URI} from './pathMap';
 import Toast from './toast';
 import RootStore from '../mobx/index';
 const service = axios.create({
-  baseURL: BASH_URI,
+  baseURL: BASE_URI,
   timeout: 1000 * 5,
 });
 

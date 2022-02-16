@@ -8,11 +8,12 @@ import com.oblador.vectoricons.VectorIconsPackage;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
-import com.facebook.soloader.SoLoader;
+import com.facebook.soloader.SoLoader; 
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
 // import  cn.qiuxiang.react.geolocation.AMapGeolocationPackage;
+import cn.jiguang.imui.messagelist.ReactIMUIPackage; // 新增的
 public class MainApplication extends Application implements ReactApplication {
     
 
@@ -33,8 +34,9 @@ public class MainApplication extends Application implements ReactApplication {
           // Packages that cannot be autolinked yet can be added manually here, for example:
         //   packages.add(new MainReactPackage());
         //   packages.add(new JMessageReactPackage(shutdownToast));
+          packages.add(new ReactIMUIPackage()); // 新增的
           return packages;
-        }
+        }   
 
         @Override
         protected String getJSMainModuleName() {
